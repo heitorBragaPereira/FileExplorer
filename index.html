@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Buscar por arquivo ou pasta</h1>
+      </div>
+      <!-- Loader inicialmente escondido -->
+
+      <div class="menu">
+        <label class="search" for="search">Nome do Arquivo/Pasta</label>
+        <div class="menuSearch">
+          <input type="text" id="search" />
+          <button onclick="searchFiles()">BUSCAR</button>
+        </div>
+      </div>
+      <span class="loader" id="loader" style="display: none"></span>
+      <div class="boxResults">
+        <h3 id="resultsTitle"></h3>
+        <ul id="results"></ul>
+      </div>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>
